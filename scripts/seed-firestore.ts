@@ -13,8 +13,9 @@
 
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
-import admin from 'firebase-admin';
-import type { ServiceAccount } from 'firebase-admin';
+import { initializeApp, cert } from 'firebase-admin/app';
+import { getFirestore } from 'firebase-admin/firestore';
+import type { ServiceAccount } from 'firebase-admin/app';
 import { mockStore, mockProducts } from '../src/lib/mockData.js';
 
 // ── Init ─────────────────────────────────────────────────────────────────────
@@ -35,21 +36,16 @@ try {
   process.exit(1);
 }
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
-
-const db = admin.firestore();
+initializeApp({ credential: cert(serviceAccount) });
+const db = getFirestore();
 
 // ── Seed ─────────────────────────────────────────────────────────────────────
 
 async function seed() {
   console.log('\n🌱 Seeding Firestore...\n');
 
-  // Use storeId from mock data as the Firestore document ID
   const storeRef = db.collection('stores').doc(mockStore.id);
 
-  // Write store document
   await storeRef.set({
     name: mockStore.name,
     address: mockStore.address,
@@ -70,7 +66,7 @@ async function seed() {
     }
 
     await batch.commit();
-    console.log(`✅ Products batch written (${i + 1}–${i + chunk.length} of ${mockProducts.length})`);
+    console.log(`✅ Products batch (${i + 1}–${i + chunk.length} of ${mockProducts.length})`);
   }
 
   console.log(`\n✅ Done! ${mockProducts.length} products seeded under stores/${mockStore.id}\n`);
