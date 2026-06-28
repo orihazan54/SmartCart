@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helper functions ─────────────────────────────────────────────────────
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function getUserRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    function isEmployeeOrManager() {
+      return isSignedIn() && getUserRole() in ['employee', 'manager'];
+    }
+
+    // ── Stores & products — public read, employee/manager write ──────────────
+
+    match /stores/{storeId} {
+      allow read: if true;
+      allow write: if isEmployeeOrManager();
+
+      match /products/{productId} {
+        allow read: if true;
+        allow write: if isEmployeeOrManager();
+      }
+    }
+
+    // ── Users — owner-only read/write ─────────────────────────────────────────
+
+    match /users/{uid} {
+      allow read, write: if isOwner(uid);
+
+      match /shoppingLists/{listId} {
+        allow read, write: if isOwner(uid);
+      }
+
+      match /searchHistory/{entryId} {
+        allow read, write: if isOwner(uid);
+      }
+    }
+  }
+}
