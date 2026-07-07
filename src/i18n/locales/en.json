@@ -14,11 +14,21 @@
     "yes": "Yes",
     "no": "No",
     "appName": "SmartCart",
-    "comingSoon": "Coming soon..."
+    "comingSoon": "Coming soon...",
+    "or": "or",
+    "backToHome": "Back to home",
+    "comingSoonTitle": "Coming Soon",
+    "comingSoonDesc": "This feature is in development and coming soon"
   },
   "landing": {
     "title": "Smart Supermarket",
     "subtitle": "A smart shopping list that guides you through the aisles — fast, easy and smart",
+    "tagline": "Smart shopping list that navigates you in-store",
+    "startNow": "Start now",
+    "guestHint": "Quick shopping, no sign-up needed",
+    "haveAccount": "I have an account",
+    "accountHint": "Save lists and personal recommendations",
+    "staffAccess": "Staff access",
     "loginCustomer": "Sign in as Customer",
     "register": "New Registration",
     "loginEmployee": "Employee Login",
@@ -26,7 +36,49 @@
     "loginGuest": "Continue as Guest",
     "welcomeBack": "Welcome back",
     "or": "or",
-    "tagline": "Your shopping, sorted by aisle"
+    "feature1": "Sorted by aisle",
+    "feature2": "Exact location",
+    "feature3": "4 languages"
+  },
+  "auth": {
+    "signInTitle": "Sign In",
+    "signUpTitle": "Create Account",
+    "upgradeTitle": "Save your list",
+    "upgradeSubtitle": "Create an account to save your shopping history and searches",
+    "email": "Email",
+    "password": "Password",
+    "displayName": "Display name",
+    "displayNameOptional": "Display name (optional)",
+    "signInButton": "Sign In",
+    "signUpButton": "Create Account",
+    "upgradeButton": "Create Account",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "signUpLink": "Sign up",
+    "signInLink": "Sign in",
+    "continueAsGuest": "Continue without signing in",
+    "signedIn": "Welcome back!",
+    "errors": {
+      "invalidEmail": "Invalid email address",
+      "weakPassword": "Password must be at least 6 characters",
+      "emailInUse": "Email address already in use",
+      "invalidCredentials": "Incorrect email or password",
+      "generic": "An error occurred. Please try again"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "account": "Account",
+    "anonymous": "Guest user",
+    "upgradePrompt": "Save your shopping",
+    "upgradeHint": "Create an account to keep your lists and history",
+    "upgrade": "Create account",
+    "privacy": "Privacy",
+    "saveHistory": "Save search history",
+    "saveHistoryHint": "Save searches and completed lists (can be deleted at any time)",
+    "language": "Language",
+    "signOut": "Sign out",
+    "signedOut": "You've been signed out"
   },
   "shop": {
     "emptyState": "Your list is empty",
@@ -48,7 +100,9 @@
     "locationLabel": "Aisle {{aisle}} · Shelf {{shelf}} · {{side}}",
     "itemCount": "{{count}} items",
     "addToList": "Add to list",
-    "storeBanner": "Shopping at {{name}}"
+    "storeBanner": "Shopping at {{name}}",
+    "itemAdded": "{{name}} added to list",
+    "finishShopping": "Finish shopping"
   },
   "categories": {
     "fruits_vegetables": "Fruits & Vegetables",
@@ -65,26 +119,26 @@
     "other": "Other"
   },
   "employee": {
-    "title": "[en] ממשק עובד",
+    "title": "Employee Panel",
     "comingSoon": "Coming soon...",
-    "login": "[en] כניסה לעובדים",
-    "emailLabel": "[en] דואר אלקטרוני",
-    "passwordLabel": "[en] סיסמה",
-    "loginButton": "[en] כניסה",
-    "products": "[en] מוצרים",
-    "addProduct": "[en] הוסף מוצר",
-    "editProduct": "[en] ערוך מוצר",
-    "productName": "[en] שם המוצר",
-    "productCategory": "[en] קטגוריה",
-    "productAisle": "[en] מעבר",
-    "productShelf": "[en] מדף",
-    "productSide": "[en] צד"
+    "login": "Employee Login",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "loginButton": "Sign In",
+    "products": "Products",
+    "addProduct": "Add product",
+    "editProduct": "Edit product",
+    "productName": "Product name",
+    "productCategory": "Category",
+    "productAisle": "Aisle",
+    "productShelf": "Shelf",
+    "productSide": "Side"
   },
   "manager": {
-    "title": "[en] לוח בקרה",
+    "title": "Dashboard",
     "comingSoon": "Coming soon...",
-    "totalProducts": "[en] סה\"כ מוצרים",
-    "totalOrders": "[en] סה\"כ הזמנות",
-    "activeUsers": "[en] משתמשים פעילים"
+    "totalProducts": "Total products",
+    "totalOrders": "Total orders",
+    "activeUsers": "Active users"
   }
 }

@@ -14,11 +14,21 @@
     "yes": "نعم",
     "no": "لا",
     "appName": "SmartCart",
-    "comingSoon": "قريباً..."
+    "comingSoon": "قريباً...",
+    "or": "أو",
+    "backToHome": "العودة للرئيسية",
+    "comingSoonTitle": "قيد التطوير",
+    "comingSoonDesc": "هذه الميزة قيد التطوير وستتوفر قريباً"
   },
   "landing": {
     "title": "سوبرماركت ذكي",
     "subtitle": "قائمة تسوق ذكية ستقودك عبر الممرات — سريع، سهل وذكي",
+    "tagline": "قائمة تسوق ذكية تقودك داخل المتجر",
+    "startNow": "ابدأ الآن",
+    "guestHint": "تسوق سريع بدون تسجيل",
+    "haveAccount": "لدي حساب",
+    "accountHint": "احفظ القوائم والتوصيات الشخصية",
+    "staffAccess": "دخول الموظفين",
     "loginCustomer": "دخول كعميل",
     "register": "تسجيل جديد",
     "loginEmployee": "دخول موظف",
@@ -26,7 +36,49 @@
     "loginGuest": "بدون تسجيل",
     "welcomeBack": "مرحباً بعودتك",
     "or": "أو",
-    "tagline": "تسوقك، مرتب حسب الممرات"
+    "feature1": "مرتبة حسب الممرات",
+    "feature2": "موقع دقيق",
+    "feature3": "4 لغات"
+  },
+  "auth": {
+    "signInTitle": "تسجيل الدخول",
+    "signUpTitle": "إنشاء حساب",
+    "upgradeTitle": "احفظ قائمتك",
+    "upgradeSubtitle": "أنشئ حساباً لحفظ تاريخ التسوق والبحث",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "displayName": "اسم العرض",
+    "displayNameOptional": "اسم العرض (اختياري)",
+    "signInButton": "دخول",
+    "signUpButton": "إنشاء حساب",
+    "upgradeButton": "إنشاء حساب",
+    "noAccount": "ليس لديك حساب؟",
+    "haveAccount": "لديك حساب بالفعل؟",
+    "signUpLink": "التسجيل",
+    "signInLink": "تسجيل الدخول",
+    "continueAsGuest": "المتابعة بدون تسجيل",
+    "signedIn": "أهلاً بك!",
+    "errors": {
+      "invalidEmail": "عنوان البريد الإلكتروني غير صالح",
+      "weakPassword": "يجب أن تحتوي كلمة المرور على 6 أحرف على الأقل",
+      "emailInUse": "عنوان البريد الإلكتروني مستخدم بالفعل",
+      "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+      "generic": "حدث خطأ. يرجى المحاولة مرة أخرى"
+    }
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "account": "الحساب",
+    "anonymous": "زائر مجهول",
+    "upgradePrompt": "احفظ تسوقك",
+    "upgradeHint": "أنشئ حساباً للحفاظ على قوائمك وتاريخك",
+    "upgrade": "إنشاء حساب",
+    "privacy": "الخصوصية",
+    "saveHistory": "حفظ تاريخ البحث",
+    "saveHistoryHint": "حفظ عمليات البحث والقوائم المكتملة (يمكن حذفها في أي وقت)",
+    "language": "اللغة",
+    "signOut": "تسجيل الخروج",
+    "signedOut": "تم تسجيل خروجك"
   },
   "shop": {
     "emptyState": "قائمتك فارغة",
@@ -48,7 +100,9 @@
     "locationLabel": "ممر {{aisle}} · رف {{shelf}} · {{side}}",
     "itemCount": "{{count}} عناصر",
     "addToList": "أضف للقائمة",
-    "storeBanner": "التسوق في {{name}}"
+    "storeBanner": "التسوق في {{name}}",
+    "itemAdded": "تمت إضافة {{name}} للقائمة",
+    "finishShopping": "إنهاء التسوق"
   },
   "categories": {
     "fruits_vegetables": "فواكه وخضروات",
@@ -65,26 +119,26 @@
     "other": "عام"
   },
   "employee": {
-    "title": "[ar] ממשק עובד",
+    "title": "لوحة الموظف",
     "comingSoon": "قريباً...",
-    "login": "[ar] כניסה לעובדים",
-    "emailLabel": "[ar] דואר אלקטרוני",
-    "passwordLabel": "[ar] סיסמה",
-    "loginButton": "[ar] כניסה",
-    "products": "[ar] מוצרים",
-    "addProduct": "[ar] הוסף מוצר",
-    "editProduct": "[ar] ערוך מוצר",
-    "productName": "[ar] שם המוצר",
-    "productCategory": "[ar] קטגוריה",
-    "productAisle": "[ar] מעבר",
-    "productShelf": "[ar] מדף",
-    "productSide": "[ar] צד"
+    "login": "دخول الموظفين",
+    "emailLabel": "البريد الإلكتروني",
+    "passwordLabel": "كلمة المرور",
+    "loginButton": "دخول",
+    "products": "المنتجات",
+    "addProduct": "إضافة منتج",
+    "editProduct": "تعديل منتج",
+    "productName": "اسم المنتج",
+    "productCategory": "الفئة",
+    "productAisle": "الممر",
+    "productShelf": "الرف",
+    "productSide": "الجانب"
   },
   "manager": {
-    "title": "[ar] לוח בקרה",
+    "title": "لوحة التحكم",
     "comingSoon": "قريباً...",
-    "totalProducts": "[ar] סה\"כ מוצרים",
-    "totalOrders": "[ar] סה\"כ הזמנות",
-    "activeUsers": "[ar] משתמשים פעילים"
+    "totalProducts": "إجمالي المنتجات",
+    "totalOrders": "إجمالي الطلبات",
+    "activeUsers": "المستخدمون النشطون"
   }
 }

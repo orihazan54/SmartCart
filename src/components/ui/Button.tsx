@@ -1,4 +1,3 @@
-import React from 'react';
 import { cn } from '../../lib/utils';
 
 type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline';
@@ -10,6 +9,7 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   icon?: React.ReactNode;
   iconEnd?: React.ReactNode;
   fullWidth?: boolean;
+  glow?: boolean;
 };
 
 const variantClasses: Record<ButtonVariant, string> = {
@@ -35,6 +35,7 @@ export function Button({
   icon,
   iconEnd,
   fullWidth = false,
+  glow = false,
   className,
   children,
   disabled,
@@ -43,12 +44,13 @@ export function Button({
   return (
     <button
       className={cn(
-        'inline-flex items-center justify-center font-medium transition-colors duration-150',
+        'inline-flex items-center justify-center font-medium transition-all duration-150',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2',
         'disabled:opacity-50 disabled:pointer-events-none',
         variantClasses[variant],
         sizeClasses[size],
         fullWidth && 'w-full',
+        glow && 'shadow-glow hover:-translate-y-0.5',
         className
       )}
       disabled={disabled}

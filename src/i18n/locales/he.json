@@ -14,11 +14,21 @@
     "yes": "כן",
     "no": "לא",
     "appName": "SmartCart",
-    "comingSoon": "בקרוב..."
+    "comingSoon": "בקרוב...",
+    "or": "או",
+    "backToHome": "חזרה לדף הבית",
+    "comingSoonTitle": "בבנייה",
+    "comingSoonDesc": "הפיצ'ר הזה בפיתוח ויגיע בקרוב"
   },
   "landing": {
     "title": "סופרמרקט חכם",
     "subtitle": "רשימת קניות חכמה שתוביל אותך בין המדפים — מהיר, קל וחכם",
+    "tagline": "רשימת קניות חכמה שמנווטת אותך בסופר",
+    "startNow": "התחל עכשיו",
+    "guestHint": "קנייה מהירה, ללא הרשמה",
+    "haveAccount": "יש לי חשבון",
+    "accountHint": "שמור רשימות והמלצות אישיות",
+    "staffAccess": "כניסת צוות",
     "loginCustomer": "כניסה כלקוח",
     "register": "הרשמה חדשה",
     "loginEmployee": "כניסת עובד",
@@ -26,7 +36,49 @@
     "loginGuest": "ללא הרשמה",
     "welcomeBack": "ברוכים השבים",
     "or": "או",
-    "tagline": "הקנייה שלך, מסודרת לפי מעברים"
+    "feature1": "מסודר לפי מעברים",
+    "feature2": "מיקום מדויק",
+    "feature3": "4 שפות"
+  },
+  "auth": {
+    "signInTitle": "כניסה לחשבון",
+    "signUpTitle": "הרשמה",
+    "upgradeTitle": "שמור את הרשימה שלך",
+    "upgradeSubtitle": "צור חשבון כדי לשמור היסטוריית קניות וחיפושים",
+    "email": "דואר אלקטרוני",
+    "password": "סיסמה",
+    "displayName": "שם תצוגה",
+    "displayNameOptional": "שם תצוגה (אופציונלי)",
+    "signInButton": "כניסה",
+    "signUpButton": "הרשמה",
+    "upgradeButton": "צור חשבון",
+    "noAccount": "אין לך חשבון?",
+    "haveAccount": "יש לך חשבון?",
+    "signUpLink": "הרשמה",
+    "signInLink": "כניסה",
+    "continueAsGuest": "המשך ללא הרשמה",
+    "signedIn": "ברוך הבא!",
+    "errors": {
+      "invalidEmail": "כתובת דוא\"ל לא חוקית",
+      "weakPassword": "הסיסמה חייבת להכיל לפחות 6 תווים",
+      "emailInUse": "כתובת דוא\"ל כבר בשימוש",
+      "invalidCredentials": "אימייל או סיסמה שגויים",
+      "generic": "אירעה שגיאה. נסה שוב"
+    }
+  },
+  "settings": {
+    "title": "הגדרות",
+    "account": "חשבון",
+    "anonymous": "גולש אנונימי",
+    "upgradePrompt": "שמור את הקניות שלך",
+    "upgradeHint": "צור חשבון כדי לשמור את הרשימות וההיסטוריה שלך",
+    "upgrade": "צור חשבון",
+    "privacy": "פרטיות",
+    "saveHistory": "שמור היסטוריית חיפוש",
+    "saveHistoryHint": "שמור חיפושים ורשימות שהושלמו (ניתן למחוק בכל עת)",
+    "language": "שפה",
+    "signOut": "יציאה מהחשבון",
+    "signedOut": "יצאת מהחשבון"
   },
   "shop": {
     "emptyState": "הרשימה שלך ריקה",
@@ -48,7 +100,9 @@
     "locationLabel": "מעבר {{aisle}} · מדף {{shelf}} · {{side}}",
     "itemCount": "{{count}} פריטים",
     "addToList": "הוסף לרשימה",
-    "storeBanner": "קנייה ב{{name}}"
+    "storeBanner": "קנייה ב{{name}}",
+    "itemAdded": "{{name}} נוסף לרשימה",
+    "finishShopping": "סיים קניה"
   },
   "categories": {
     "fruits_vegetables": "פירות וירקות",
